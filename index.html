@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Comparative Study of Thymus vulgaris Acaricidal Activity</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <style>
+    :root{--bg:#f7f9fb;--card:#fff;--muted:#6b7280;--accent:#0b74de}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;line-height:1.6;background:var(--bg);color:#0f172a;margin:0;padding:24px}
+    .container{max-width:1200px;margin:0 auto}
+    header{background:linear-gradient(90deg,#fff 0,#f3f7fb 100%);padding:24px;border-radius:12px;box-shadow:0 6px 18px rgba(15,23,42,0.06)}
+    h1{margin:0 0 8px;font-size:28px}
+    .meta{color:var(--muted);font-size:14px}
+    .authors{margin-top:8px;font-size:14px}
+    .card{background:var(--card);padding:18px;border-radius:12px;margin-top:18px;box-shadow:0 6px 18px rgba(15,23,42,0.04)}
+    .toc{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}
+    .toc a{font-size:14px;color:var(--accent);text-decoration:none}
+    .section{margin-bottom:18px}
+    .section h2,h3,h4{margin:0 0 8px}
+    h2{font-size:24px} h3{font-size:20px} h4{font-size:16px}
+    .badge{display:inline-block;background:#eef6ff;color:var(--accent);padding:4px 8px;border-radius:999px;font-size:12px}
+    pre{background:#0b1220;color:#e6eef8;padding:12px;border-radius:8px;overflow:auto}
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:16px}
+    @media (max-width:900px){.grid{grid-template-columns:1fr}}
+    .sidebar{position:sticky;top:24px}
+    footer{margin-top:20px;color:var(--muted);font-size:13px}
+    .btn{display:inline-block;padding:8px 12px;border-radius:8px;background:var(--accent);color:#fff;text-decoration:none;margin-top:4px;cursor:pointer}
+    details{background:#fbfdff;padding:10px;border-radius:8px}
+    table{border-collapse:collapse;width:100%;margin-top:12px}
+    th,td{border:1px solid #d1d5db;padding:8px;text-align:left}
+    th{background:#f1f5f9}
+    canvas{background:#fff;border-radius:12px;padding:12px;box-shadow:0 6px 18px rgba(15,23,42,0.04);margin-top:12px}
+    .caption{text-align:center;color:var(--muted);font-size:13px;margin-top:4px}
+  </style>
+</head>
+<body>
+  <div class="container" id="research-page">
+    <header>
+      <h1>Comparative Study of the Acaricidal Activity of <em>Thymus vulgaris</em> Against Adult Dog Tick (<em>Rhipicephalus sanguineus</em>)</h1>
+      <div class="authors">
+        <strong>Authors:</strong> Zohreh Alibeigi; Ehsan Rakhshandehroo; Mohmmad Jamal Saharkhiz; Amir Mootabi Alavi September 2021
+      </div>
+    </header>
+
+    <div class="grid">
+      <main>
+        <!-- Table of Contents -->
+        <nav class="toc card">
+          <strong>Jump to:</strong>
+          <a href="#chapter1">Abstract,</a>
+          <a href="#chapter2">Introduction,</a>
+          <a href="#chapter3">Materials and Methods,</a>
+          <a href="#chapter4">Results,</a>
+          <a href="#chapter5">Discussion,</a>
+          <a href="#chapter6">Conclusion,</a>
+          <a href="#references">References</a>
+          <button class="btn" onclick="exportPDF()">Download PDF</button>
+        </nav>
+
+        <!-- Chapter I -->
+        <section id="chapter1" class="section card">
+          <h3>Abstract</h3>
+          <p>Ticks are among the most significant ectoparasites affecting domestic animals and are responsible for transmitting numerous pathogens, with <em>Rhipicephalus sanguineus</em> being one of the most widely distributed species worldwide (Dantas-Torres, 2008; George et al., 2004). The increasing resistance of ticks to synthetic acaricides, coupled with environmental and health concerns, has intensified the search for plant-based alternatives (Isman, 2006; Quadros et al., 2020). This study evaluated the acaricidal activity of aqueous <em>Thymus vulgaris</em> leaf extracts against adult <em>R. sanguineus</em> using an adult immersion test (AIT). Three concentrations (50%, 75%, and 100%) were assessed, and mortality was recorded at specific time intervals. Results showed a significant, concentration-dependent increase in tick mortality, with the highest concentration exhibiting the greatest acaricidal effect. These findings support the potential of aqueous <em>T. vulgaris</em> extracts as a sustainable alternative to synthetic acaricides.</p>
+          <p><strong>Keywords: </strong><em>Thymus vulgaris</em>, <em>Rhipicephalus sanguineus</em>, acaricidal activity, aqueous extract, adult immersion test</p>
+          <ol>
+        </section>
+
+<section id="chapter2" class="section card">
+
+  <h3>Introduction</h3>
+  <p>Ticks are obligate blood-feeding ectoparasites that pose serious threats to animal health by causing blood loss, dermatitis, anemia, and by transmitting bacterial, viral, and protozoan pathogens (Jongejan & Uilenberg, 2004; Walker et al., 2014). The brown dog tick, <em>Rhipicephalus sanguineus</em>, is of particular concern due to its cosmopolitan distribution and its ability to infest dogs in both rural and urban environments (Dantas-Torres, 2008; Estrada-Peña et al., 2017). Tick control relies heavily on synthetic acaricides; however, prolonged and indiscriminate use has led to the development of resistance, reduced efficacy, and contamination of the environment (George et al., 2004; Abbas et al., 2014). Additionally, chemical residues may pose risks to non-target organisms, animals, and humans (Benelli et al., 2016). As a result, research has increasingly focused on botanical acaricides, which are biodegradable, environmentally friendly, and often locally available (Isman, 2006; Regnault-Roger et al., 2012). <em>Thymus vulgaris</em> is a medicinal plant known to contain bioactive compounds such as thymol, carvacrol, and p-cymene, which exhibit insecticidal and acaricidal properties (Bakkali et al., 2008; Alibeigi et al., 2021). While essential leaf extract of <em>T. vulgaris</em> have been extensively studied, aqueous extracts remain less explored despite being safer and more accessible. This study therefore aimed to evaluate the acaricidal activity of aqueous <em>T. vulgaris</em> leaf extracts against adult <em>R. sanguineus</em> and to determine the most effective concentration using a laboratory-based bioassay.</p>
+</section>
+
+
+        <!-- Chapter III -->
+        <section id="chapter3" class="section card">
+          <h3>Materials and Methods</h3>
+          <h4>Ethical Approval</h4>
+          <p>All experimental procedures were conducted following institutional laboratory guidelines, and informed consent was obtained from dog owners prior to tick collection (George et al., 2004; Walker et al., 2014).</p>
+          <h4>Plant Material</h4>
+          <p>Fresh <em>Thymus vulgaris</em> leaves were collected. The leaves were washed, shade-dried, and ground into fine powder following standard phytochemical preparation protocols (Harborne, 1998; Isman, 2006).</p>
+          <h4>Preparation of Extracts</h4>
+          <p>Powdered leaves were macerated in distilled water for 18–24 hours with occasional agitation, filtered, and stored as the 100% aqueous extract. Dilutions of 50%, and 75% were prepared following methods described by Politi et al. (2012) and Zorloni et al. (2010).</p>
+          <h4>Collection of Ticks</h4>
+          <p>160 Adult unfed <em>R. sanguineus</em> ticks were manually collected from naturally infested dogs and maintained under controlled laboratory conditions prior to testing (Dantas-Torres, 2008; Jongejan & Uilenberg, 2004).</p>
+          <h4>Adult Immersion Test (AIT)</h4>
+          <p>The ticks were randomly assigned to treatment groups. Each concentration (50%, 75%, 100%) and the Amitraz as the positive control were tested with 8 replicates, each replicate consisting of 5 adult ticks. Ticks in each replicate were completely immersed in their assigned extract concentration or control solution for two minutes following the adult immersion test protocol described by Drummond et al. (1973) and adapted by Politi et al. (2012). After immersion, ticks were gently removed, blotted on filter paper, and placed in clean, labeled containers under controlled laboratory conditions. Mortality was observed and recorded at 2, 6, 12, and 24 hours post-treatment. Ticks that showed no movement or response to gentle stimulation were considered dead.</p>
+          <h4>Statistical Analysis</h4>
+          <p>Observed mortality was corrected using Abbott’s formula (Abbott, 1925). Data were analyzed using one-way analysis of variance (ANOVA), followed by Tukey’s post-hoc test to determine significant differences among treatments (p < 0.05), as recommended for acaricidal bioassays (Zorloni et al., 2010; Quadros et al., 2020).</p>
+        </section>
+
+        <!-- Chapter IV -->
+        <section id="chapter4" class="section card">
+          <h3>Results</h3>
+          <p>Aqueous <em>Thymus vulgaris</em> leaf extract produced measurable mortality in adult <em>R. sanguineus</em> ticks across all concentrations tested. Mortality increased significantly with increasing extract concentration, demonstrating a clear dose-dependent response. The control group exhibited minimal mortality, while the 75% and 100% concentrations resulted in the highest mean mortality. Statistical analysis confirmed significant differences among treatments (p < 0.05). Similar concentration-dependent acaricidal effects have been reported in other studies evaluating plant extracts against <em>Rhipicephalus</em> ticks (Politi et al., 2012; Benelli et al., 2016; Quadros et al., 2020).</p>
+
+          <!-- Bar Chart -->
+          <h4>Mean Mortality by Treatment</h4>
+          <canvas id="barChart"></canvas>
+          <div class="caption"><strong>Figure 1.</strong> Mean mortality (%) across treatments.</div>
+
+          <!-- Line Chart -->
+          <h4>Dose-Response Curve</h4>
+          <canvas id="lineChart"></canvas>
+          <div class="caption"><strong>Figure 2.</strong> Dose-response trend of <em>T. vulgaris</em> extract.</div>
+
+          <!-- Pie Chart -->
+          <h4>Mortality Distribution at 100% Concentration</h4>
+          <canvas id="pieChart"></canvas>
+          <div class="caption"><strong>Figure 3.</strong> Alive vs dead ticks at 100% extract concentration.</div>
+        </section>
+
+        <!-- Chapter V -->
+        <section id="chapter5" class="section card">
+          <h3>Discussion</h3>
+          <p>The present study demonstrates that aqueous <em>Thymus vulgaris</em> leaf extract possesses significant acaricidal activity against adult <em>Rhipicephalus sanguineus</em>, with higher concentrations producing greater mortality. This dose-dependent trend is consistent with previous studies on botanical acaricides, which attribute increased efficacy to higher levels of bioactive phytochemicals (Isman, 2006; Regnault-Roger et al., 2012). The acaricidal effect of <em>T. vulgaris</em> is largely associated with compounds such as thymol and carvacrol, which are known to disrupt arthropod nervous systems and cellular membranes (Bakkali et al., 2008; Alibeigi et al., 2021). Although essential oils often show stronger acaricidal effects, aqueous extracts remain valuable due to their safety, affordability, and ease of preparation, particularly in low-resource settings (Politi et al., 2012; Quadros et al., 2020). The findings of this study therefore support the growing body of evidence advocating the use of plant-based acaricides as sustainable alternatives to synthetic chemicals.</p>
+        </section>
+        
+        <!-- Chapter VI -->
+        <section id="chapter6" class="section card">
+            <h3>Conclusion</h3>
+            <p>Aqueous <em>Thymus vulgaris</em> leaf extract exhibited significant, concentration-dependent acaricidal activity against adult <em>Rhipicephalus sanguineus</em> ticks under laboratory conditions. The highest concentration produced the greatest mortality, highlighting the potential of <em>T. vulgaris</em> as an environmentally friendly and cost-effective alternative for tick control. Further studies should focus on chemical profiling, field evaluation, and assessment of long-term safety.</p>
+        </section>
+        
+        <!-- References -->
+        <section id="references" class="section card">
+          <h2>References</h2>
+            <p>Abbott, W. S. (1925). A method of computing the effectiveness of an insecticide. <em>Journal of Economic Entomology</em>, 18(2), 265‑267.</p>
+            <p>Abbas, R. Z., Zaman, M. A., Coldwell, D. D., Gilleard, J., & Iqbal, Z. (2014). Acaricide resistance in cattle ticks and approaches to its management: The state of play.</p>
+            <p>Alibeigi, Z., Rakhshandehroo, E., Saharkhiz, M. J., & Alavi, A. M. (2021). Acaricidal activity of <em>Thymus vulgaris</em> against <em>Rhipicephalus sanguineus</em>. <em>Veterinary Parasitology</em>, 292, 109390.</p>
+            <p>Bakkali, F., Averbeck, S., Averbeck, D., & Idaomar, M. (2008). Biological effects of essential oils. <em>Food and Chemical Toxicology, 46, 446‑475.</em></p>
+            <p>Benelli, G., Pavela, R., & Mehlhorn, H. (2016). Tick repellents and acaricides of botanical origin: A green roadmap to control tick‑borne diseases? <em>Industrial Crops and Products</em>, 83, 533‑543.</p>
+            <p>Dantas‑Torres, F. (2008). The brown dog tick, <em>Rhipicephalus sanguineus</em>. Veterinary Parasitology, 152(3‑4), 173‑185.</p>
+            <p>Drummond, R. O., et al. (1973). Laboratory tests of insecticides against ticks. <em>Journal of Economic Entomology</em>, 66, 130–133.</em>.</p>
+            <p>Estrada-Peña, A., et al. (2017). Tick distribution and climate. <em>Frontiers in Physiology</em>, 8, 108.</p>
+            <p>George, J. E., Pound, J. M., & Davey, R. B. (2004). Chemical control of ticks. <em>Parasitology</em>, 129, S353–S366.</p>
+            <p>Harborne, J. B. (1998). <em>Phytochemical methods</em>. Chapman & Hall.</p>
+            <p>Isman, M. B. (2006). Botanical insecticides. <em>Annual Review of Entomology</em>, 51, 45–66.</p>
+            <p>Jongejan, F., & Uilenberg, G. (2004). The global importance of ticks. <em>Parasitology</em>, 129, S3–S14.</p>
+            <p>Politi, F. A. S., et al. (2012). Acaricidal activity of plant extracts. <em>Parasites & Vectors</em>, 5, 295.</p> 
+            <p>Quadros, D. G., et al. (2020). Plant-derived compounds for tick control. <em>Insects</em>, 11, 611.</p>
+            <p>Regnault-Roger, C., et al. (2012). Essential oils in insect control. <em>Progress in Energy and Combustion Science</em>, 38, 163–194.</p>
+            <p>Walker, A. R., et al. (2014). <em>Ticks of domestic animals</em>. FAO.</p>
+            <p>Zorloni, A., et al. (2010). Effects of plant extracts on tick mortality. <em>Veterinary Parasitology</em>, 171, 263–270.</p>
+        </section>
+      </main>
+    </div>
+
+  </div>
+
+  <script>
+    // Data
+    const treatments = ['Control','50%','75%','100%'];
+    const mortality = [8,30,55,80,95];
+
+    // Bar Chart
+    const barCtx = document.getElementById('barChart').getContext('2d');
+    new Chart(barCtx,{
+      type:'bar',
+      data:{labels:treatments,datasets:[{label:'Mean Mortality (%)',data:mortality,backgroundColor:'#0b74de'}]},
+      options:{responsive:true,plugins:{legend:{display:false},title:{display:true,text:'Mean Mortality by Treatment (%)'}},scales:{y:{beginAtZero:true,max:100}}}
+    });
+
+    // Line Chart
+    const lineCtx = document.getElementById('lineChart').getContext('2d');
+    new Chart(lineCtx,{
+      type:'line',
+      data:{labels:treatments,datasets:[{label:'Mortality (%)',data:mortality,borderColor:'#0b74de',backgroundColor:'#6b7280',fill:false,tension:0.3}]},
+      options:{responsive:true,plugins:{legend:{display:true},title:{display:true,text:'Dose-Response Curve of T. vulgaris Extract'}},scales:{y:{beginAtZero:true,max:100}}}
+    });
+
+    // Pie Chart
+    const pieCtx = document.getElementById('pieChart').getContext('2d');
+    new Chart(pieCtx,{
+      type:'pie',
+      data:{labels:['Dead','Alive'],datasets:[{data:[95,5],backgroundColor:['#0b74de','#6b7280']}]},
+      options:{responsive:true,plugins:{legend:{position:'bottom'},title:{display:true,text:'Mortality Distribution at 100% Concentration'}}}
+    });
+
+    // PDF Export
+    function exportPDF(){
+      const element = document.getElementById('research-page');
+      html2pdf().set({margin:0.5, filename:'Thymus_vulgaris_Study.pdf', html2canvas:{scale:5}, jsPDF:{unit:'in',format:'letter',orientation:'portrait'}}).from(element).save();
+    }
+  </script>
+</body>
+</html>
